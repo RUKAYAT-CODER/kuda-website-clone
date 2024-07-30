@@ -1,0 +1,29 @@
+<svg width="109" height="110" viewBox="0 0 109 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_1_2067)">
+<g clip-path="url(#clip0_1_2067)">
+<rect x="25" y="10.46" width="29" height="29" rx="14.5" fill="white" fill-opacity="0.01" shape-rendering="crispEdges"/>
+<path d="M39.5 38.46C46.9558 38.46 53 32.4158 53 24.96C53 17.5041 46.9558 11.46 39.5 11.46C32.0442 11.46 26 17.5041 26 24.96C26 32.4158 32.0442 38.46 39.5 38.46Z" fill="#EFF1FF" stroke="#40196D" stroke-width="0.5"/>
+<mask id="mask0_1_2067" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="33" y="18" width="13" height="15">
+<path d="M45.9231 18.46H33V32.46H45.9231V18.46Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_1_2067)">
+<path d="M33.2336 23.4618H35.8742V31.4446H33.2336V23.4618ZM42.6891 23.1977C41.5312 23.1977 40.8406 23.6243 40.1094 24.5586V23.4618H37.4688V31.4446H40.1297V27.118C40.1297 26.2039 40.5969 25.3102 41.6531 25.3102C42.7094 25.3102 43.3391 26.2039 43.3391 27.0977V31.4446H46V26.9149C46 23.7664 43.8672 23.1977 42.6891 23.1977ZM34.5641 19.582C33.6906 19.582 33 20.2117 33 20.9836C33 21.7555 33.6906 22.3852 34.5641 22.3852C35.4375 22.3852 36.1281 21.7555 36.1281 20.9836C36.1281 20.2117 35.4375 19.582 34.5641 19.582Z" fill="#40196D"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_1_2067" x="0" y="0.459961" width="109" height="109" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="15" dy="30"/>
+<feGaussianBlur stdDeviation="20"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.25098 0 0 0 0 0.0980392 0 0 0 0 0.427451 0 0 0 0.07 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2067"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2067" result="shape"/>
+</filter>
+<clipPath id="clip0_1_2067">
+<rect x="25" y="10.46" width="29" height="29" rx="14.5" fill="white"/>
+</clipPath>
+</defs>
+</svg>
