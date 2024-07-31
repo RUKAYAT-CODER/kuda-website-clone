@@ -342,7 +342,7 @@ a {
   margin: 0 0 20px;
   padding: 22px 25px;
   color: #40196d;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 /* ===Your phone your app section=== */
@@ -509,6 +509,7 @@ th .otherBanks {
 /* ==bottom-two section=== */
 .bottom-two {
   display: flex;
+  gap: 70px;
 }
 .socials-content {
   display: flex;
@@ -517,6 +518,12 @@ th .otherBanks {
 .social-container {
   display: flex;
   gap: 0;
+}
+
+.social-container img {
+  width: 5rem;
+  height: 5rem;
+  aspect-ratio: 1;
 }
 .social-container li {
   text-align: center;
@@ -537,16 +544,54 @@ th .otherBanks {
   .nav-buttons .hamburger {
     display: flex;
   }
-  /* ===mobile-nav=== */
-
-  /* .container {
-    margin: 50px 5px 0;
-    padding: 50px 20px 23px;
-  } */
-  .text-container-properties {
-    max-width: 47%;
-    margin-bottom: 10px;
+   .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0 !important;
   }
+  .container {
+  margin: 0 40px;
+  padding:0;
+}
+hr{
+  width: 100%;
+}
+.your-phone-our-app, .section-five-save-money, .happy-to-help {
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+  padding: 50px 20px;
+}
+.fourth-section, .turn-off-access-section-six, .fees-as-clear-as-glass{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.save-money-text{
+  margin-bottom: 100px;
+}
+.text-properties{
+  text-align: center;
+  line-height: 1.5;
+}
+.text-container-properties {
+  max-width: 100%;
+  margin-bottom: 80px;
+}
+  .list-item-li{
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-entity {
+  transform: rotate(270deg);
+}
+  .text-container-properties {
+  max-width: 50%;
+  margin-bottom: 100px;
+  text-align: center;
+}
   .card-top .card {
     width: 280px;
   }
@@ -564,7 +609,8 @@ th .otherBanks {
   }
   .lower-card-cont {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    height: fit-content;
   }
   .money-app-african img {
     display: none;
@@ -587,12 +633,20 @@ th .otherBanks {
   text-align: center;
   font-size: 28px;
 }
+.bottom-two {
+  display: flex;
+  gap: 10px;
+}
 
 @media (max-width: 768px) {
-   .nav-links,
-  .nav-buttons .sign-in,
-  .nav-buttons button {
-    display: none;
+ 
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0 !important;
   }
   .nav-buttons .hamburger {
     display: flex;
