@@ -85,7 +85,7 @@ a {
   background-color: #40196d;
   color: #fff;
   font-weight: bold;
-  padding: 15px 20px;
+  padding: 15px 18px;
   cursor: pointer;
   border: none;
   color: white;
@@ -143,7 +143,7 @@ a {
 
 .image-properties img {
   width: 100%;
-  max-width: 500px;
+  max-width: 550px;
 }
 
 .app-links a img {
@@ -202,12 +202,13 @@ a {
   justify-content: space-between;
   width: 100%;
   margin-left: auto;
-  margin-right: auto;
-  max-width: 1700px;
+  margin-right: 40px;
+  max-width: 1800px;
   padding-top: 6%;
   padding-left: 60px;
   padding-right: 60px;
   background-color: white;
+  margin-top: 100px;
 }
 .sponsors img {
   cursor: pointer;
@@ -515,7 +516,7 @@ th .otherBanks {
 }
 .social-container {
   display: flex;
-  list-style-type: none;
+  gap: 0;
 }
 .social-container li {
   text-align: center;
@@ -527,7 +528,7 @@ th .otherBanks {
 }
 
 /* Responsive design */
-@media (min-width: 768px) and (max-width:1023px){
+@media (min-width: 768px) and (max-width: 1023px) {
   .nav-links,
   .nav-buttons .sign-in,
   .nav-buttons button {
@@ -538,10 +539,10 @@ th .otherBanks {
   }
   /* ===mobile-nav=== */
 
-  .container {
+  /* .container {
     margin: 50px 5px 0;
     padding: 50px 20px 23px;
-  }
+  } */
   .text-container-properties {
     max-width: 47%;
     margin-bottom: 10px;
@@ -588,8 +589,13 @@ th .otherBanks {
 }
 
 @media (max-width: 768px) {
-  .mobile-nav {
-    justify-content: space-around;
+   .nav-links,
+  .nav-buttons .sign-in,
+  .nav-buttons button {
+    display: none;
+  }
+  .nav-buttons .hamburger {
+    display: flex;
   }
   .bottom-one {
     flex-wrap: wrap;
@@ -608,21 +614,6 @@ th .otherBanks {
   }
 }
 
-@media (max-width: 480px) {
-  .mobile-nav {
-    gap: 380px;
-  }
-  .comparison-table th,
-  .comparison-table td {
-    padding: 6px;
-    font-size: 0.8rem;
-  }
-
-  .comparison-table th {
-    font-size: 0.9rem;
-  }
-}
-
 /* Responsive styles */
 @media (max-width: 767px) {
   .flex-properties {
@@ -634,6 +625,16 @@ th .otherBanks {
   .text-container-properties .hero-text {
     max-width: 100%;
     text-align: center;
+  }
+  .container {
+    margin-inline: 0;
+  }
+  .flex-properties {
+    align-items: flex-start;
+    padding-inline: 0;
+  }
+  .text-container-properties {
+    max-width: 100%;
   }
 
   .hero-image,
@@ -654,30 +655,47 @@ th .otherBanks {
   .card-bottom .card {
     width: 100%;
   }
+  .app-links {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+  }
 }
 
-@media (max-width: 376px) {
+@media screen and (max-width: 376px) {
   .hero-text h1 {
-    font-size: 2rem;
+    font-size: 32.5px;
+    margin: 0 0 10px;
+    text-align: center;
+    /* text-wrap: nowrap; */
   }
-  
-  .hero-text p {
-    font-size: 1rem;
+  .nav-links,
+  .nav-buttons .sign-in,
+  .nav-buttons button {
+    display: none;
+  }
+  .nav-buttons .hamburger {
+    display: flex;
+  }
+  header {
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .container {
+    max-width: 376px;
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .comparison-table th,
+  .comparison-table td {
+    padding: 6px;
+    font-size: 0.8rem;
   }
 
-  .features {
-    padding: 20px;
-  }
-
-  .testimonials {
-    padding: 20px;
-  }
-
-  .partners {
-    padding: 20px;
-  }
-
-  footer {
-    padding: 20px;
+  .comparison-table th {
+    font-size: 0.9rem;
   }
 }
