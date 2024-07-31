@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 /* Base styles */
+
 * {
   padding: 0;
   margin: 0;
@@ -25,14 +26,12 @@ header {
   left: 0;
   width: 100%;
   z-index: 90;
+  height: 80px;
 }
 .header-entity {
   color: #40196d;
   width: 2px;
   height: 2px;
-}
-.header{
-  display: none;
 }
 nav {
   display: flex;
@@ -40,11 +39,18 @@ nav {
   align-items: center;
   width: 100%;
 }
-
+.nav-buttons .hamburger,
+#close-btn {
+  display: none;
+}
 .logo img {
   width: 100px;
 }
-
+#close-btn {
+  font-size: 24px;
+  color: #40196d;
+  font-weight: 900;
+}
 .nav-links {
   list-style: none;
   display: flex;
@@ -87,7 +93,7 @@ a {
   margin: 0 0 0 40px;
   font-size: 1rem;
 }
-.join-kuda-bottom{
+.join-kuda-bottom {
   margin-left: 0;
   margin-top: 40px;
 }
@@ -110,16 +116,17 @@ a {
   align-items: center;
   padding: 50px 20px;
 }
-.text-properties{
+.text-properties {
   margin-bottom: 20px;
 }
 .text-container-properties {
   max-width: 50%;
 }
-.hero-text h1{
+.hero-text h1 {
   text-wrap: wrap;
 }
-.hero-text h1, .money-app-african h1 {
+.hero-text h1,
+.money-app-african h1 {
   font-size: 3rem;
   line-height: 1.15;
   color: #40196d;
@@ -188,7 +195,7 @@ a {
   font-weight: 900;
 }
 /* ====section nine sponsorrs==== */
-.sponsors{
+.sponsors {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -202,15 +209,15 @@ a {
   padding-right: 60px;
   background-color: white;
 }
-.sponsors img{
+.sponsors img {
   cursor: pointer;
 }
-.sponsors .fourth-sponsor{
-width: 128px;
-height: 40px;
+.sponsors .fourth-sponsor {
+  width: 128px;
+  height: 40px;
 }
 /* ===Section ten=== */
-.partners{
+.partners {
   display: flex;
   flex-direction: column;
   background-color: #fbfbfb;
@@ -224,7 +231,7 @@ height: 40px;
   position: relative;
   margin-left: -50vw;
 }
-.partners-container{
+.partners-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -234,14 +241,14 @@ height: 40px;
   width: 100vw;
   gap: 100px;
 }
-.partners h2{
+.partners h2 {
   margin-bottom: 40px;
 }
-.center{
+.center {
   text-align: center;
   margin-bottom: 40px;
 }
-.partners-container img{
+.partners-container img {
   cursor: pointer;
 }
 .certificates p {
@@ -347,82 +354,83 @@ height: 40px;
 }
 /* ===Section eleven table== */
 .comparison-table-container {
-    width: 100%;
-    margin: 100px 0;
-    /* overflow-x: auto; */
+  width: 100%;
+  margin: 100px 0;
+  /* overflow-x: auto; */
 }
- th .otherBanks{
+th .otherBanks {
   font-size: 20px;
   color: #40196d;
 }
 .comparison-table {
-    width: 100%;
-    max-width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    box-shadow: 15px 30px 40px rgba(64, 25, 109, .07);
-    text-align: left;
-    min-width: 600px; /* Minimum width to maintain table structure */
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 15px 30px 40px rgba(64, 25, 109, 0.07);
+  text-align: left;
+  min-width: 600px; /* Minimum width to maintain table structure */
 }
-.sub-headind-left-table{
+.sub-headind-left-table {
   text-align: left;
   font-weight: 900;
   font-size: 16px;
 }
-.comparison-table th, .comparison-table td {
-    /* border: 1px solid #ddd; */
-    padding: 8px;
-    text-align: left;
-    vertical-align: middle;
+.comparison-table th,
+.comparison-table td {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
 }
 
 .comparison-table th {
-    background-color: #f4f4f4;
-    font-size: 18px;
-    font-weight: bold;
-     text-align: left;
+  background-color: #f4f4f4;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
 }
 
 .comparison-table td {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .comparison-table .emoji {
-    font-size: 1.5em;
-    margin-right: 5px;
+  font-size: 1.5em;
+  margin-right: 5px;
 }
 
 .comparison-table tbody tr:hover {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
-.comparison-table th, .comparison-table td {
-    /* border: 1px solid #ddd; */
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-    vertical-align: middle;
+.comparison-table th,
+.comparison-table td {
+  /* border: 1px solid #ddd; */
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  vertical-align: middle;
 }
 
 .comparison-table th {
-    background-color: white;
-    border-bottom: 1px solid #ddd;
-    font-size: 1.2rem;
-    font-weight: 900;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2rem;
+  font-weight: 900;
   color: #40196d;
 }
 
 .comparison-table td {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .comparison-table .emoji {
-    font-size: 1.5em;
-    margin-right: 5px;
+  font-size: 1.5em;
+  margin-right: 5px;
 }
 
 /*=== section twelve=== */
-.lower-card
-{
+.lower-card {
   display: flex;
   /* gap: 10px; */
   justify-content: space-between;
@@ -430,247 +438,231 @@ height: 40px;
   background-color: white;
   border-radius: 5px;
 }
-.lower-card-cont{
-  box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+.lower-card-cont {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.06);
   padding: 22px 25px;
-   flex-wrap: wrap; 
-   height: 261px;
-    width: 340px;
-   background-color: white;
+  flex-wrap: wrap;
+  height: 261px;
+  width: 340px;
+  background-color: white;
 }
-.lower-card-content{
+.lower-card-content {
   display: flex;
   flex-direction: column;
 }
-.lower-card-content h3{
-    font-size: 24px;
-    line-height: 30.12px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    color: #40196d;
-    font-weight: 900;
+.lower-card-content h3 {
+  font-size: 24px;
+  line-height: 30.12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #40196d;
+  font-weight: 900;
 }
-.lower-card-content p{
+.lower-card-content p {
   margin-bottom: 30px;
 }
 /* ===section thirteen== */
-.money-app-african{
+.money-app-african {
   margin-top: 100px;
-  border: 1px solid hsla(228, 7%, 87%, .5);
-    border-radius: 5px;
-    box-shadow: 15px 30px 40px rgba(64, 25, 109, .07);
-    overflow: hidden;
-    padding: 40px 88px 0px;
-    position: relative;
-    background-color: #eff1ff;
-    margin-bottom: 40px;
+  border: 1px solid hsla(228, 7%, 87%, 0.5);
+  border-radius: 5px;
+  box-shadow: 15px 30px 40px rgba(64, 25, 109, 0.07);
+  overflow: hidden;
+  padding: 40px 88px 0px;
+  position: relative;
+  background-color: #eff1ff;
+  margin-bottom: 40px;
 }
-.bottom-one{
+.bottom-one {
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
 }
-.bottom-one-content{
+.bottom-one-content {
   display: flex;
   flex-direction: column;
-
 }
-.bottom-one-content p, .bottom-two-content p, .bottom-two p{
-font-size: 16px;
-color: #40196d;
-font-weight: 900;
-line-height: 2.4rem;
+.bottom-one-content p,
+.bottom-two-content p,
+.bottom-two p {
+  font-size: 16px;
+  color: #40196d;
+  font-weight: 900;
+  line-height: 2.4rem;
 }
-.bottom-one-content span{
-line-height: 2.4rem;
+.bottom-one-content span {
+  line-height: 2.4rem;
 }
-.bottom-two-content{
+.bottom-two-content {
   margin-right: 30px;
 }
-.single-text{
-color: #979797;
-font-family: 14px;
-text-align: center;
-margin-bottom: 50px;
+.single-text {
+  color: #979797;
+  font-family: 14px;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.section-app-logos{
-margin: 50px 0;
+.section-app-logos {
+  margin: 50px 0;
 }
 /* ==bottom-two section=== */
-.bottom-two{
+.bottom-two {
   display: flex;
 }
-.socials-content{
+.socials-content {
   display: flex;
   flex-direction: column;
 }
-.social-container{
+.social-container {
   display: flex;
   list-style-type: none;
-  
 }
-.social-container li{
+.social-container li {
   text-align: center;
 }
-.footer-info p{
+.footer-info p {
   text-align: left;
   font-size: 12px;
   color: #979797;
 }
+
 /* Responsive design */
-@media (max-width:991px){
-nav{
-  display: none;
+@media (min-width: 768px) and (max-width:1023px){
+  .nav-links,
+  .nav-buttons .sign-in,
+  .nav-buttons button {
+    display: none;
+  }
+  .nav-buttons .hamburger {
+    display: flex;
+  }
+  /* ===mobile-nav=== */
+
+  .container {
+    margin: 50px 5px 0;
+    padding: 50px 20px 23px;
+  }
+  .text-container-properties {
+    max-width: 47%;
+    margin-bottom: 10px;
+  }
+  .card-top .card {
+    width: 280px;
+  }
+  .testimonials-section h2,
+  .money-app-african h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .sub-card-testimonials p {
+    font-size: 10px;
+  }
+  .lower-card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .lower-card-cont {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .money-app-african img {
+    display: none;
+  }
 }
-/* ===mobile-nav=== */
-.header{
-   background: #fff;
-  padding: 0 3.75rem;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  box-shadow: 0 4px 13px rgba(0, 0, 0, 0.05);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 90;
-  justify-content: space-between;
+.money-app-african button {
+  margin-left: 120px;
 }
-.mobile-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 400px;
-  vertical-align: middle;
+.bottom-one-content p {
+  font-size: 14px;
 }
-.mobile-with-flag{
-  display: flex;
-  align-items: center;
-  /* margin-left: 550px; */
+.bottom-one-content span,
+.bottom-two-content span {
+  font-size: 12px;
 }
-.mobile-with-flag img{
-  margin-left: 8px;
-}
-.container {
-  margin: 50px 5px 0;
-  padding: 50px 20px 63px;
-}
-.text-container-properties {
-  max-width: 47%;
-  margin-bottom: 10px;
-}
-.card-top .card{
-  width: 280px;
-}
-.testimonials-section h2, .money-app-african h1{
-font-size: 28px;
-text-align: center;
-}
-.sub-card-testimonials p{
-font-size: 10px;
-}
-.lower-card{
-flex-direction: column;
-width: 100%;
-}
-.lower-card-cont{
-width: 100%;
-margin-bottom: 20px;
-}
-.money-app-african img{
-display: none;}
-}
-.money-app-african button{
- margin-left: 120px;
-}
-.bottom-one-content p{
-font-size: 14px;
-}
-.bottom-one-content span, .bottom-two-content span{
-font-size: 12px;
-}
-.column-reverse{
+.column-reverse {
   flex-direction: column-reverse;
 }
-.h2-properties-tablet{
+.h2-properties {
   text-align: center;
   font-size: 28px;
 }
 
-
 @media (max-width: 768px) {
-  .mobile-nav{
-  justify-content: space-around;
-}
-.bottom-one{
-  flex-wrap: wrap;
-}
-    .comparison-table th, .comparison-table td {
-        padding: 8px;
-        font-size: 0.9rem;
-    }
+  .mobile-nav {
+    justify-content: space-around;
+  }
+  .bottom-one {
+    flex-wrap: wrap;
+  }
+  .comparison-table th,
+  .comparison-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
 
-    .comparison-table th {
-        font-size: 1rem;
-    }
-    .bottom-two{
-  flex-direction: column;
-}
+  .comparison-table th {
+    font-size: 1rem;
+  }
+  .bottom-two {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
-  .mobile-nav{
-  gap: 380px;
-  
+  .mobile-nav {
+    gap: 380px;
+  }
+  .comparison-table th,
+  .comparison-table td {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+
+  .comparison-table th {
+    font-size: 0.9rem;
+  }
 }
-    .comparison-table th, .comparison-table td {
-        padding: 6px;
-        font-size: 0.8rem;
-    }
-
-    .comparison-table th {
-        font-size: 0.9rem;
-    }
-}
-
-
 
 /* Responsive styles */
 @media (max-width: 767px) {
-  .flex-properties{
+  .flex-properties {
     flex-direction: column;
   }
-.column-reverse{
-  flex-direction: column-reverse;
-}
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
   .text-container-properties .hero-text {
     max-width: 100%;
     text-align: center;
   }
 
-  .hero-image, .image-properties {
+  .hero-image,
+  .image-properties {
     margin-top: 20px;
   }
-  .card-top, .card-bottom{
+  .card-top,
+  .card-bottom {
     grid-template-columns: 1fr;
     width: 100%;
   }
- .hero-text h1{
-  text-align: center;
- }
-  .card-top .card{
+  .hero-text h1 {
+    text-align: center;
+  }
+  .card-top .card {
     width: 100%;
   }
- .card-bottom .card{
-  width: 100%;
- }
+  .card-bottom .card {
+    width: 100%;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 376px) {
   .hero-text h1 {
     font-size: 2rem;
   }
-
+  .your-phone-app-text a {
+    text-align: center;
+  }
   .hero-text p {
     font-size: 1rem;
   }
