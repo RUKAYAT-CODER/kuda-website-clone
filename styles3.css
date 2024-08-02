@@ -6,12 +6,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+html{
+  font-size:16px;
+}
 body {
   font-family: "Mulish", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
 }
 /* ===Header section=== */
 header {
@@ -30,8 +32,7 @@ header {
 }
 .header-entity {
   color: #40196d;
-  width: 2px;
-  height: 2px;
+
 }
 nav {
   display: flex;
@@ -43,13 +44,19 @@ nav {
 #close-btn {
   display: none;
 }
+.list-item-li{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
 .logo img {
   width: 100px;
 }
 #close-btn {
-  font-size: 24px;
+  font-size: 20px;
   color: #40196d;
   font-weight: 900;
+  /* margin-right: 10px; */
 }
 .nav-links {
   list-style: none;
@@ -63,7 +70,7 @@ nav {
   text-decoration: none;
   color: #40196d;
   font-size: 14px;
-  margin-right: 60px;
+  margin-right: 40px;
 }
 
 .nav-buttons {
@@ -80,6 +87,7 @@ a {
   font-size: 14px;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
 }
 .join-kuda {
   background-color: #40196d;
@@ -104,17 +112,15 @@ a {
   cursor: pointer;
 }
 /* ===Main section===== */
-.container {
-  margin: 50px 130px 0;
-  padding: 50px 40px 63px;
+section, footer{
+ margin: 50px 120px 0;
+  padding: 40px 40px 50px; 
 }
-
 /* ===hero section==== */
 .flex-properties {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 20px;
 }
 .text-properties {
   margin-bottom: 20px;
@@ -257,7 +263,12 @@ a {
   font-size: 0.9rem;
   color: #666;
 }
+.social-container img{
+  width: 30px;
+  margin-right: 25px;
+  margin-top: 5px;
 
+}
 .certificates img {
   width: 30px;
   vertical-align: middle;
@@ -334,7 +345,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 370px;
+  width: 350px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.06);
@@ -433,17 +444,20 @@ th .otherBanks {
 /*=== section twelve=== */
 .lower-card {
   display: flex;
-  /* gap: 10px; */
+  gap: 12px;
+  align-items: baseline;
   justify-content: space-between;
   padding: 22px 25px;
   background-color: white;
   border-radius: 5px;
+  -webkit-box-align: baseline;
+    -webkit-box-pack: justify;
 }
 .lower-card-cont {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.06);
   padding: 22px 25px;
   flex-wrap: wrap;
-  height: 261px;
+  height: 291px;
   width: 340px;
   background-color: white;
 }
@@ -520,11 +534,11 @@ th .otherBanks {
   gap: 0;
 }
 
-.social-container img {
+/* .social-container img {
   width: 5rem;
   height: 5rem;
-  aspect-ratio: 1;
-}
+  aspect-ratio: 1;} */
+
 .social-container li {
   text-align: center;
 }
@@ -533,9 +547,12 @@ th .otherBanks {
   font-size: 12px;
   color: #979797;
 }
+footer{
+  margin-top: 20px;
+}
 
 /* Responsive design */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 767px) and (max-width: 1023px) {
   .nav-links,
   .nav-buttons .sign-in,
   .nav-buttons button {
@@ -552,9 +569,27 @@ th .otherBanks {
     height: 100vh;
     margin-top: 0 !important;
   }
-  .container {
-  margin: 0 40px;
-  padding:0;
+  .nav-links li a {
+  margin-right: 0px;
+}
+ section{
+  margin-inline: 0px;
+  margin-top: 100px;
+  padding: 0 20px;
+ }
+ .hero-text h1{
+  font-size: 43px;
+  margin: 50px 0px 20px;
+  text-align: left;
+}
+.hero-text p{
+  text-align: left;
+}
+.flex-properties {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 }
 hr{
   width: 100%;
@@ -563,7 +598,7 @@ hr{
   display: flex;
  flex-direction: column;
  align-items: center;
-  padding: 50px 20px;
+  width: 100%;
 }
 .fourth-section, .turn-off-access-section-six, .fees-as-clear-as-glass{
   display: flex;
@@ -573,7 +608,7 @@ hr{
   margin-bottom: 100px;
 }
 .text-properties{
-  text-align: center;
+  text-align: left;
   line-height: 1.5;
 }
 .text-container-properties {
@@ -583,14 +618,28 @@ hr{
   .list-item-li{
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid #eff1ff;
+    padding: 15px;
+    align-items: center;
+    vertical-align: middle;
   }
-  .header-entity {
-  transform: rotate(270deg);
+  .sub-card-testimonials {
+  gap: 10px;
+}
+  .arrow-down{
+  /* transform: rotate(270deg); */
 }
   .text-container-properties {
   max-width: 50%;
   margin-bottom: 100px;
   text-align: center;
+}
+.card-container {
+  margin-top:0px;
+  gap: 0;
+}
+.cards {
+  gap: 10px;
 }
   .card-top .card {
     width: 280px;
@@ -615,9 +664,22 @@ hr{
   .money-app-african img {
     display: none;
   }
+  .money-app-african h1{
+  font-size: 32px;
+  text-align: center;
+}
+.money-app-african p{
+  text-align: center;
+}
+.sponsors {
+gap: 8px;
+padding-left: 50px;
+padding-right: 50px;
+margin-right: auto;
 }
 .money-app-african button {
   margin-left: 120px;
+  margin-bottom: 40px;
 }
 .bottom-one-content p {
   font-size: 14px;
@@ -637,9 +699,15 @@ hr{
   display: flex;
   gap: 10px;
 }
-
-@media (max-width: 768px) {
- 
+.join-kuda-bottom {
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  section, footer {
+    margin: 90px 80px 0;
+    padding: 20px 10px 30px;
+  }
   .nav-links {
     position: absolute;
     top: 80px;
@@ -666,24 +734,69 @@ hr{
   .bottom-two {
     flex-direction: column;
   }
+  .sub-card-testimonials {
+ flex-wrap: wrap;
+}
+section{
+   margin: 20px 80px 0;
+    padding: 20px 10px 30px;
+}
+       
+.sub-cards-testimony {
+    width: 260px;
+    height: 200px;
+    min-height: 210px;
+    padding: 20px 22px;
+    gap: 10px;
+}
+  .flex-properties {
+    align-items: flex-start;
+    padding-inline: 0;
+  }
+  .text-container-properties {
+    max-width: 100%;
+  }
+  .card {
+  padding: 22px 18px;
+}
+  .card-top,
+  .card-bottom {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .hero-text h1 {
+    text-align: center;
+  }
+  .card-top .card {
+    width: 100%;
+  }
+  .card-bottom .card {
+    width: 100%;
+  }
+  .app-links {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+  }
 }
 
 /* Responsive styles */
-@media (max-width: 767px) {
-  .flex-properties {
-    flex-direction: column;
+/* @media (max-width: 767px) { */
+  /* .flex-properties {
+    /* flex-direction: column;
   }
   .column-reverse {
     flex-direction: column-reverse;
-  }
-  .text-container-properties .hero-text {
+  } */
+  /* .text-container-properties .hero-text {
     max-width: 100%;
     text-align: center;
   }
   .container {
     margin-inline: 0;
-  }
-  .flex-properties {
+  }  */
+  /* .flex-properties {
     align-items: flex-start;
     padding-inline: 0;
   }
@@ -715,41 +828,311 @@ hr{
     display: flex;
     gap: 1rem;
   }
+} */
+/* @media screen and (min-width:377px) and (max-width:767px){
+   .nav-links li a {
+  display: none;
 }
-
-@media screen and (max-width: 376px) {
-  .hero-text h1 {
-    font-size: 32.5px;
-    margin: 0 0 10px;
-    text-align: center;
-    /* text-wrap: nowrap; */
+.nav-links,
+  .nav-buttons .sign-in,
+  .nav-buttons button {
+    display: none;
+}
+ .h2-properties {
+  text-align: center;
+  font-size: 28px;
+}
+} */
+@media screen and (min-width:380px) and (max-width:700px){
+.nav-links,
+  .nav-buttons .sign-in,
+  .nav-buttons button {
+    display: none;
   }
+
+  .hamburger {
+    display: flex;
+  }
+
+  header {
+    /* max-width: 376px; */
+    width: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0 !important;
+  }
+
+  section, footer {
+    margin: 20px 10px 0;
+    padding: 20px 10px 30px;
+  }
+
+  .hero, .your-phone-our-app, .section-five-save-money, .happy-to-help {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .fourth-section, .turn-off-access-section-six, .fees-as-clear-as-glass {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 10px;
+  }
+
+  .card-container {
+    margin-top: 0;
+    gap: 0;
+  }
+  .card {
+    margin: 0 0 18px;
+    padding: 16px 10px;
+  }
+  .cards {
+    gap: 0;
+  }
+
+  .card p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+    padding-top: 80px;
+    text-align: center;
+  }
+.hero-text p{
+  font-size: 16px;
+  text-wrap: wrap;
+  text-align: center;
+}
+  .h2-properties {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .nav-buttons .hamburger {
+    display: flex;
+  }
+
+  .comparison-table-container {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .comparison-table {
+    min-width: 100%;
+    width: 100%;
+    overflow-x: hidden; 
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    font-size: 0.5rem;
+    word-wrap: break-word; 
+  }
+
+  .comparison-table th {
+    font-size: 0.7rem;
+  }
+
+  .money-app-african {
+    padding: 10px;
+  }
+
+  .money-app-african button {
+    margin-bottom: 20px;
+  }
+
+  .lower-card {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .lower-card-content h3 {
+    font-size: 18px;
+  }
+
+  .money-app-african img {
+    display: none;
+  }
+
+  .money-app-african h1 {
+    font-size: 24px;
+  }
+
+  .dont-take-our-word {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .sub-card-testimonials {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sponsors {
+    margin: 0 10px; 
+    padding: 0 10px; 
+  }
+
+  .sponsors img {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 376px) {
   .nav-links,
   .nav-buttons .sign-in,
   .nav-buttons button {
     display: none;
   }
+
+  .hamburger {
+    display: flex;
+  }
+
+  header {
+    max-width: 376px;
+    width: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0 !important;
+  }
+
+  section, footer {
+    margin: 20px 10px 0;
+    padding: 20px 10px 30px;
+  }
+
+  .hero, .your-phone-our-app, .section-five-save-money, .happy-to-help {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .fourth-section, .turn-off-access-section-six, .fees-as-clear-as-glass {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 10px;
+  }
+
+  .card-container {
+    margin-top: 0;
+    gap: 0;
+  }
+  .card {
+    margin: 0 0 18px;
+    padding: 16px 10px;
+  }
+  .cards {
+    gap: 0;
+  }
+
+  .card p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+    padding-top: 80px;
+    text-align: center;
+  }
+.hero-text p{
+  font-size: 16px;
+  text-wrap: wrap;
+  text-align: center;
+}
+  .h2-properties {
+    text-align: center;
+    font-size: 26px;
+  }
+
   .nav-buttons .hamburger {
     display: flex;
   }
-  header {
+
+  .comparison-table-container {
+    overflow-x: hidden;
     width: 100%;
-    padding: 0 20px;
-    overflow: hidden;
   }
-  .container {
-    max-width: 376px;
-    padding: 10px;
+
+  .comparison-table {
+    min-width: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden; 
   }
+
   .comparison-table th,
   .comparison-table td {
-    padding: 6px;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
+    word-wrap: break-word; 
   }
 
   .comparison-table th {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+  }
+
+  .money-app-african {
+    padding: 10px;
+  }
+
+  .money-app-african button {
+    margin-bottom: 20px;
+  }
+
+  .lower-card {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .lower-card-content h3 {
+    font-size: 18px;
+  }
+
+  .money-app-african img {
+    display: none;
+  }
+
+  .money-app-african h1 {
+    font-size: 24px;
+  }
+
+  .dont-take-our-word {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .sub-card-testimonials {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sponsors {
+    margin: 0 10px; 
+    padding: 0 10px; 
+  }
+
+  .sponsors img {
+    margin-bottom: 20px;
   }
 }
+
